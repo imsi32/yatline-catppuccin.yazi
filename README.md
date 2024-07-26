@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/catppuccin/template">App</a>
+	Catppuccin for <a href="https://github.com/imsi32/yatline.yazi">Yatline</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -12,43 +12,64 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/imsi32/yatline-catppuccin.yazi/main/assets/previews/preview.webp"/>
+	<img src="assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/imsi32/yatline-catppuccin.yazi/main/assets/previews/latte.webp"/>
+  	<img src="assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/imsi32/yatline-catppuccin.yazi/main/assets/previews/frappe.webp"/>
+    	<img src="assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/imsi32/yatline-catppuccin.yazi/main/assets/previews/macchiato.webp"/>
+    	<img src="assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/imsi32/yatline-catppuccin.yazi/main/assets/previews/mocha.webp"/>
+    	<img src="assets/mocha.webp"/>
 </details>
 
+
+## Installation
+
+### General
+1) Download the repository.
+2) If the directory is downloaded as zip file, extract it.
+3) Rename the directory as `yatline-catppuccin.yazi`
+4) Open the config directory of Yazi.
+5) Copy this directory into `plugins` directory.
+6) Create `init.lua` file in the main Yazi config directory.
+7) Open this file and copy the config to that file.
+
+### Linux
+``` bash
+git clone https://github.com/imsi32/yatline-catppuccin.yazi.git ~/.config/yazi/plugins/yatline-catppuccin.yazi
+```
+
 ## Usage
+Copy the following config to the `init.lua` file.
+``` lua
+local catppuccin_theme = require("yatline-catppuccin"):setup("mocha") -- or "latte" | "frappe" | "macchiato"
+```
+Then use the `theme` variable in Yatline config's theme paramater.
+``` lua
+require("yatline"):setup({
+-- ===
 
-1. Download the flavor of your choice.
-2. Open the app and go to **Preferences** > **Appearance** > **Import theme**.
-3. Select the downloaded flavor file.
+	theme = catppuccin_theme,
 
-<!-- The FAQ section is optional. Remove if needed.-->
-## 🙋 FAQ
-
-- Q: **_"How can I do X?"_**\
-  A: ...
+-- ===
+})
+```
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/imsi32)
+- [imsi32](https://github.com/imsi32)
 
 &nbsp;
 
