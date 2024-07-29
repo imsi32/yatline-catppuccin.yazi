@@ -134,6 +134,7 @@ local function catppuccin_theme(flavor)
   end
 
   return {
+    -- yatline
     section_separator_open = "",
     section_separator_close = "",
 
@@ -169,6 +170,16 @@ local function catppuccin_theme(flavor)
     fail = { icon = "", fg = catppuccin_palette.red },
     found = { icon = "", fg = catppuccin_palette.blue },
     processed = { icon = "", fg = catppuccin_palette.green },
+
+    -- yatline-githead
+    prefix_color = catppuccin_palette.subtext0,
+    branch_color = catppuccin_palette.sapphire,
+    commit_color = catppuccin_palette.mauve,
+    stashes_color = catppuccin_palette.pink,
+    state_color = catppuccin_palette.maroon,
+    staged_color = catppuccin_palette.yellow,
+    unstaged_color = catppuccin_palette.peach,
+    untracked_color = catppuccin_palette.teal,
   }
 end
 
