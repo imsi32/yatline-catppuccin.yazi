@@ -57,6 +57,10 @@ require("yatline"):setup({
 })
 ```
 
+## Supported Plugins
+
+- [yatline-githead.yazi](https://github.com/imsi32/yatline-githead.yazi)
+
 ## 💝 Thanks to
 
 - [imsi32](https://github.com/imsi32)
