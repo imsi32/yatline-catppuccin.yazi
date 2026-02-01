@@ -37,18 +37,8 @@
 
 ## Installation
 
-### General
-1) Download the repository.
-2) If the directory is downloaded as zip file, extract it.
-3) Rename the directory as `yatline-catppuccin.yazi`
-4) Open the config directory of Yazi.
-5) Copy this directory into `plugins` directory.
-6) Create `init.lua` file in the main Yazi config directory.
-7) Open this file and copy the config to that file.
-
-### Linux
 ``` bash
-git clone https://github.com/imsi32/yatline-catppuccin.yazi.git ~/.config/yazi/plugins/yatline-catppuccin.yazi
+ya pkg add imsi32/yatline-catppuccin
 ```
 
 ## Usage
